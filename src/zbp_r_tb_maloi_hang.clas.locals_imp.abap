@@ -1,0 +1,33 @@
+CLASS lsc_zr_tb_maloi_hang DEFINITION INHERITING FROM cl_abap_behavior_saver.
+
+  PROTECTED SECTION.
+
+    METHODS cleanup_finalize REDEFINITION.
+
+ENDCLASS.
+
+CLASS lsc_zr_tb_maloi_hang IMPLEMENTATION.
+
+  METHOD cleanup_finalize.
+  ENDMETHOD.
+
+ENDCLASS.
+
+CLASS LHC_ZR_TB_MALOI_HANG DEFINITION INHERITING FROM CL_ABAP_BEHAVIOR_HANDLER.
+  PRIVATE SECTION.
+    METHODS:
+      GET_GLOBAL_AUTHORIZATIONS FOR GLOBAL AUTHORIZATION
+        IMPORTING
+           REQUEST requested_authorizations FOR ZrTbMaloiHang
+        RESULT result,
+      get_instance_features FOR INSTANCE FEATURES
+            IMPORTING keys REQUEST requested_features FOR ZrTbMaloiHang RESULT result.
+ENDCLASS.
+
+CLASS LHC_ZR_TB_MALOI_HANG IMPLEMENTATION.
+  METHOD GET_GLOBAL_AUTHORIZATIONS.
+  ENDMETHOD.
+  METHOD get_instance_features.
+  ENDMETHOD.
+
+ENDCLASS.
