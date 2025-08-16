@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_scop_page_space_gc00 IMPLEMENTATION.
+CLASS ZCL_SCOP_PAGE_SPACE_GC00 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 

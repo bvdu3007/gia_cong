@@ -14,7 +14,7 @@ define root view entity ZI_BB_GC as select from ztb_bb_gc
     // Lấy Supplier trực tiếp từ association _Po
     _Po.Supplier       as Supplier,    
     // Lấy tên Supplier từ association _Sup
-    _Po.SupplierName,
+    _Po.SupplierName, 
     _Po.OrderID        as OrderID,
     ngay_nhap_hang     as NgayNhapHang,
     ngay_tra_bb        as NgayTraBb,
