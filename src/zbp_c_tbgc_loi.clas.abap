@@ -1,8 +1,6 @@
 class ZBP_C_TBGC_LOI definition
   public
-  abstract
-  final
-  for behavior of ZC_TBGC_LOI .
+  create private .
 
 public section.
 protected section.

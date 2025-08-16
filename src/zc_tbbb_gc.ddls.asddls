@@ -1,12 +1,12 @@
 @Metadata.allowExtensions: true
 @Metadata.ignorePropagatedAnnotations: true
 @EndUserText: {
-  label: '###GENERATED Core Data Service Entity'
+  label: 'Biên bản gia công'
 }
 @ObjectModel: {
   sapObjectNodeType.name: 'ZTBBB_GC'
 }
-@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 define root view entity ZC_TBBB_GC
   as projection on ZR_TBBB_GC
 {

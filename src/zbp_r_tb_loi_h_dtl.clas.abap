@@ -1,6 +1,8 @@
 class ZBP_R_TB_LOI_H_DTL definition
   public
-  create private .
+  abstract
+  final
+  for behavior of ZR_TB_LOI_H_DTL .
 
 public section.
 protected section.

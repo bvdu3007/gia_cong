@@ -1,7 +1,7 @@
 @AccessControl.authorizationCheck: #MANDATORY
 @Metadata.allowExtensions: true
 @ObjectModel.sapObjectNodeType.name: 'ZTBBB_GC'
-@EndUserText.label: '###GENERATED Core Data Service Entity'
+@EndUserText.label: 'Biên bản gia công'
 define root view entity ZR_TBBB_GC
   as select from ztb_bb_gc
   composition [0..*] of ZR_TBGC_LOI as _dtl

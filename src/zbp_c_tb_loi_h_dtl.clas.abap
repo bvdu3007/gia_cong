@@ -1,6 +1,8 @@
 class ZBP_C_TB_LOI_H_DTL definition
   public
-  create private .
+  abstract
+  final
+  for behavior of ZC_TB_LOI_H_DTL .
 
 public section.
 protected section.

@@ -62,6 +62,20 @@ annotate view ZC_TBGC_LOI with
   } ]
   SlLoi;
   
+    @EndUserText.label: 'Tỉ lệ lỗi'
+  @UI.identification: [ {
+    position: 75 , 
+    label: 'Tỉ lệ lỗi'
+  } ]
+  @UI.lineItem: [ {
+    position: 75 , 
+    label: 'Tỉ lệ lỗi'
+  } ]
+  @UI.selectionField: [ {
+    position: 75 
+  } ]
+  tile;
+  
   @UI.identification: [ {
     position: 80 
   } ]

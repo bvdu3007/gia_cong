@@ -1,6 +1,8 @@
 class ZBP_R_TB_MALOI_HANG definition
   public
-  create private .
+  abstract
+  final
+  for behavior of ZR_TB_MALOI_HANG .
 
 public section.
 protected section.

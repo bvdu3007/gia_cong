@@ -1,11 +1,11 @@
 @AccessControl.authorizationCheck: #MANDATORY
 @Metadata.allowExtensions: true
 @ObjectModel.sapObjectNodeType.name: 'ZTBGC_LOI'
-@EndUserText.label: '###GENERATED Core Data Service Entity'
+@EndUserText.label: 'Biên bản gia công'
 define view entity ZR_TBGC_LOI
   as select from ztb_gc_loi
   association        to parent ZR_TBBB_GC as _hdr on  $projection.HdrID = _hdr.HdrID
-{
+{ 
   key hdr_id as HdrID,
   key dtl_id as DtlID,
   loai_hang as LoaiHang,
@@ -22,6 +22,7 @@ define view entity ZR_TBGC_LOI
   error_code as ErrorCode,
   errordesc as Errordesc,
   sl_loi as SlLoi,
+  tile   ,
   bangi as Bangi,
   check_bangi as CheckBangi,
   bangii as Bangii,

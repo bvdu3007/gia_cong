@@ -1,8 +1,6 @@
 class ZBP_C_TBBB_GC definition
   public
-  abstract
-  final
-  for behavior of ZC_TBBB_GC .
+  create private .
 
 public section.
 protected section.

@@ -1,12 +1,12 @@
 @Metadata.allowExtensions: true
 @Metadata.ignorePropagatedAnnotations: true
 @EndUserText: {
-  label: '###GENERATED Core Data Service Entity'
+  label: 'Biên bản gia công'
 }
 @ObjectModel: {
   sapObjectNodeType.name: 'ZTBGC_LOI'
 }
-@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 define view entity ZC_TBGC_LOI
   as projection on ZR_TBGC_LOI
 {
@@ -25,6 +25,7 @@ define view entity ZC_TBGC_LOI
   ErrorCode,
   Errordesc,
   SlLoi,
+  tile,
   Bangi,
   CheckBangi,
   Bangii,
