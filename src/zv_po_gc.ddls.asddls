@@ -12,10 +12,17 @@ from I_PurchaseOrderAPI01 as Po
 inner join I_Supplier_VH as Sup on Po.Supplier = Sup.Supplier
 inner join I_PurOrdAccountAssignmentAPI01   as Pur on Po.PurchaseOrder = Pur.PurchaseOrder
 inner join I_ManufacturingOrderItem as Man on Pur.OrderID = Man.ManufacturingOrder
-{
+inner join I_ProductDescription as Pdes on Man.Material = Pdes.Product 
+inner join I_ProdUnivHierarchyNodeBasic as PrU on Man.Material = PrU.Product 
+
+{ 
     key Po.PurchaseOrder,
     Po.Supplier,
     Sup.SupplierName,
-    Pur.OrderID
+    Pur.OrderID,
+    Man.SalesOrder,
+    Man.Material,
+    Pdes.ProductDescription,
+    PrU.ProdUnivHierarchyNode    
     
 }

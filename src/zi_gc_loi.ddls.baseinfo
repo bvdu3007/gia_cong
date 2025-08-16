@@ -3,7 +3,6 @@
 {
 "FROM":
 [
-"ZR_TB_LOI_H_DTL",
 "ZTB_GC_LOI"
 ],
 "ASSOCIATED":

@@ -1,0 +1,13 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TBBB_GC'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TBBB_GC'
+  }
+}
+define service ZUI_TBBB_GC_O4
+  provider contracts odata_v4_ui {
+  expose ZC_TBBB_GC;
+  expose ZC_TBGC_LOI;
+}

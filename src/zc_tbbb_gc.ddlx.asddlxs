@@ -1,0 +1,640 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'HdrID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'HdrID'
+annotate view ZC_TBBB_GC with
+{
+ 
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ,
+  
+  {
+      id: 'Items',
+      purpose: #STANDARD,
+      position: 50,
+      label: 'Items',
+      type: #LINEITEM_REFERENCE,
+      targetElement: '_dtl'
+    }
+    ]
+    
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  
+  @Consumption.valueHelpDefinition:[
+      { entity                       : { name : 'ZJP_C_DOMAIN_FIX_VAL' , element: 'low' } ,
+      additionalBinding              : [{ element: 'domain_name',
+                localConstant        : 'ZDE_LOAI_HANG', usage: #FILTER }]
+                , distinctValues     : true
+      }]
+      
+  LoaiHang;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  SoBb;
+    
+  @EndUserText.label: 'NgayLapBb'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'NgayLapBb'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'NgayLapBb'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  NgayLapBb;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  SoPo;
+  
+  @EndUserText.label: 'NgayNhapHang'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'NgayNhapHang'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'NgayNhapHang'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  NgayNhapHang;
+  
+  @EndUserText.label: 'NgayTraBb'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'NgayTraBb'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'NgayTraBb'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  NgayTraBb;
+  
+  @EndUserText.label: 'NgayNhapKho'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'NgayNhapKho'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'NgayNhapKho'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  NgayNhapKho;
+  
+  @EndUserText.label: 'Ct12'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Ct12'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Ct12'
+  } ]
+ 
+  Ct12;
+  
+  @EndUserText.label: 'Ct13'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Ct13'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Ct13'
+  } ]
+ 
+  Ct13;
+  
+  @EndUserText.label: 'Ct14'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Ct14'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Ct14'
+  } ]
+ 
+  Ct14;
+  
+  @EndUserText.label: 'Ct16'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Ct16'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Ct16'
+  } ]
+
+  Ct16;
+  
+  @EndUserText.label: 'GhiChu'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'GhiChu'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'GhiChu'
+  } ]
+ 
+  GhiChu;
+  
+  @EndUserText.label: 'Ct18'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Ct18'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Ct18'
+  } ]
+ 
+  Ct18;
+  
+  @EndUserText.label: 'Ct19'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Ct19'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'Ct19'
+  } ]
+ 
+  Ct19;
+  
+  @EndUserText.label: 'Ct20'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Ct20'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'Ct20'
+  } ]
+ 
+  Ct20;
+  
+  @EndUserText.label: 'Ct21'
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Ct21'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'Ct21'
+  } ]
+ 
+  Ct21;
+  
+  @EndUserText.label: 'Ct22'
+  @UI.identification: [ {
+    position: 190 , 
+    label: 'Ct22'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 , 
+    label: 'Ct22'
+  } ]
+ 
+  Ct22;
+  
+  @EndUserText.label: 'Ct23'
+  @UI.identification: [ {
+    position: 200 , 
+    label: 'Ct23'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 , 
+    label: 'Ct23'
+  } ]
+ 
+  Ct23;
+  
+  @EndUserText.label: 'Ct24'
+  @UI.identification: [ {
+    position: 210 , 
+    label: 'Ct24'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 , 
+    label: 'Ct24'
+  } ]
+ 
+  Ct24;
+  
+  @EndUserText.label: 'Ct25'
+  @UI.identification: [ {
+    position: 220 , 
+    label: 'Ct25'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 , 
+    label: 'Ct25'
+  } ]
+ 
+  Ct25;
+  
+  @EndUserText.label: 'Ct26'
+  @UI.identification: [ {
+    position: 230 , 
+    label: 'Ct26'
+  } ]
+  @UI.lineItem: [ {
+    position: 230 , 
+    label: 'Ct26'
+  } ]
+  
+  Ct26;
+  
+  @EndUserText.label: 'Ct27'
+  @UI.identification: [ {
+    position: 240 , 
+    label: 'Ct27'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 , 
+    label: 'Ct27'
+  } ]
+ 
+  Ct27;
+  
+  @EndUserText.label: 'Ct28'
+  @UI.identification: [ {
+    position: 250 , 
+    label: 'Ct28'
+  } ]
+  @UI.lineItem: [ {
+    position: 250 , 
+    label: 'Ct28'
+  } ]
+ 
+  Ct28;
+  
+  @EndUserText.label: 'Ct29'
+  @UI.identification: [ {
+    position: 260 , 
+    label: 'Ct29'
+  } ]
+  @UI.lineItem: [ {
+    position: 260 , 
+    label: 'Ct29'
+  } ]
+ 
+  Ct29;
+  
+  @EndUserText.label: 'Ct30'
+  @UI.identification: [ {
+    position: 270 , 
+    label: 'Ct30'
+  } ]
+  @UI.lineItem: [ {
+    position: 270 , 
+    label: 'Ct30'
+  } ]
+  
+  Ct30;
+  
+  @EndUserText.label: 'Ct31'
+  @UI.identification: [ {
+    position: 280 , 
+    label: 'Ct31'
+  } ]
+  @UI.lineItem: [ {
+    position: 280 , 
+    label: 'Ct31'
+  } ]
+ 
+  Ct31;
+  
+  @EndUserText.label: 'Ct32'
+  @UI.identification: [ {
+    position: 290 , 
+    label: 'Ct32'
+  } ]
+  @UI.lineItem: [ {
+    position: 290 , 
+    label: 'Ct32'
+  } ]
+  
+  Ct32;
+  
+  @EndUserText.label: 'Ct321'
+  @UI.identification: [ {
+    position: 300 , 
+    label: 'Ct321'
+  } ]
+  @UI.lineItem: [ {
+    position: 300 , 
+    label: 'Ct321'
+  } ]
+  
+  Ct321;
+  
+  @EndUserText.label: 'Ct322'
+  @UI.identification: [ {
+    position: 310 , 
+    label: 'Ct322'
+  } ]
+  @UI.lineItem: [ {
+    position: 310 , 
+    label: 'Ct322'
+  } ]
+ 
+  Ct322;
+  
+  @EndUserText.label: 'Ct323'
+  @UI.identification: [ {
+    position: 320 , 
+    label: 'Ct323'
+  } ]
+  @UI.lineItem: [ {
+    position: 320 , 
+    label: 'Ct323'
+  } ]
+ 
+  Ct323;
+  
+  @EndUserText.label: 'Ct324'
+  @UI.identification: [ {
+    position: 330 , 
+    label: 'Ct324'
+  } ]
+  @UI.lineItem: [ {
+    position: 330 , 
+    label: 'Ct324'
+  } ]
+  
+  Ct324;
+  
+  @EndUserText.label: 'Ct33'
+  @UI.identification: [ {
+    position: 340 , 
+    label: 'Ct33'
+  } ]
+  @UI.lineItem: [ {
+    position: 340 , 
+    label: 'Ct33'
+  } ]
+  
+  Ct33;
+  
+  @EndUserText.label: 'Ct34'
+  @UI.identification: [ {
+    position: 350 , 
+    label: 'Ct34'
+  } ]
+  @UI.lineItem: [ {
+    position: 350 , 
+    label: 'Ct34'
+  } ]
+ 
+  Ct34;
+  
+  @EndUserText.label: 'Ct35'
+  @UI.identification: [ {
+    position: 360 , 
+    label: 'Ct35'
+  } ]
+  @UI.lineItem: [ {
+    position: 360 , 
+    label: 'Ct35'
+  } ]
+  
+  Ct35;
+  
+  @EndUserText.label: 'Ct36'
+  @UI.identification: [ {
+    position: 370 , 
+    label: 'Ct36'
+  } ]
+  @UI.lineItem: [ {
+    position: 370 , 
+    label: 'Ct36'
+  } ]
+ 
+  Ct36;
+  
+  @EndUserText.label: 'Ct37'
+  @UI.identification: [ {
+    position: 380 , 
+    label: 'Ct37'
+  } ]
+  @UI.lineItem: [ {
+    position: 380 , 
+    label: 'Ct37'
+  } ]
+  
+  Ct37;
+  
+  @EndUserText.label: 'Ct38'
+  @UI.identification: [ {
+    position: 390 , 
+    label: 'Ct38'
+  } ]
+  @UI.lineItem: [ {
+    position: 390 , 
+    label: 'Ct38'
+  } ]
+  
+  Ct38;
+  
+  @EndUserText.label: 'Ct39'
+  @UI.identification: [ {
+    position: 400 , 
+    label: 'Ct39'
+  } ]
+  @UI.lineItem: [ {
+    position: 400 , 
+    label: 'Ct39'
+  } ]
+ 
+  Ct39;
+  
+  @EndUserText.label: 'Ct40'
+  @UI.identification: [ {
+    position: 410 , 
+    label: 'Ct40'
+  } ]
+  @UI.lineItem: [ {
+    position: 410 , 
+    label: 'Ct40'
+  } ]
+ 
+  Ct40;
+  
+  @EndUserText.label: 'Ct41'
+  @UI.identification: [ {
+    position: 420 , 
+    label: 'Ct41'
+  } ]
+  @UI.lineItem: [ {
+    position: 420 , 
+    label: 'Ct41'
+  } ]
+  
+  Ct41;
+  
+  @EndUserText.label: 'Ct42'
+  @UI.identification: [ {
+    position: 430 , 
+    label: 'Ct42'
+  } ]
+  @UI.lineItem: [ {
+    position: 430 , 
+    label: 'Ct42'
+  } ]
+  
+  Ct42;
+  
+  @EndUserText.label: 'Ct43'
+  @UI.identification: [ {
+    position: 440 , 
+    label: 'Ct43'
+  } ]
+  @UI.lineItem: [ {
+    position: 440 , 
+    label: 'Ct43'
+  } ]
+  
+  Ct43;
+  
+  @EndUserText.label: 'Ct44'
+  @UI.identification: [ {
+    position: 450 , 
+    label: 'Ct44'
+  } ]
+  @UI.lineItem: [ {
+    position: 450 , 
+    label: 'Ct44'
+  } ]
+ 
+  Ct44;
+  
+  @EndUserText.label: 'Ct45'
+  @UI.identification: [ {
+    position: 460 , 
+    label: 'Ct45'
+  } ]
+  @UI.lineItem: [ {
+    position: 460 , 
+    label: 'Ct45'
+  } ]
+ 
+  Ct45;
+  
+  @EndUserText.label: 'Ct46'
+  @UI.identification: [ {
+    position: 470 , 
+    label: 'Ct46'
+  } ]
+  @UI.lineItem: [ {
+    position: 470 , 
+    label: 'Ct46'
+  } ]
+  
+  Ct46;
+  
+  @EndUserText.label: 'Ct47'
+  @UI.identification: [ {
+    position: 480 , 
+    label: 'Ct47'
+  } ]
+  @UI.lineItem: [ {
+    position: 480 , 
+    label: 'Ct47'
+  } ]
+  
+  Ct47;
+  
+  @EndUserText.label: 'Ct48'
+  @UI.identification: [ {
+    position: 490 , 
+    label: 'Ct48'
+  } ]
+  @UI.lineItem: [ {
+    position: 490 , 
+    label: 'Ct48'
+  } ]
+  
+  Ct48;
+  
+  @UI.identification: [ {
+    position: 500 
+  } ]
+  @UI.lineItem: [ {
+    position: 500 
+  } ]
+  
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 510 
+  } ]
+  @UI.lineItem: [ {
+    position: 510 
+  } ]
+  
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 520 
+  } ]
+  @UI.lineItem: [ {
+    position: 520 
+  } ]
+ 
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 530 
+  } ]
+  @UI.lineItem: [ {
+    position: 530 
+  } ]
+  
+  LastChangedAt;
+  
+}
